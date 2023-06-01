@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario PLN</title>
+</head>
+<style>
+    *{
+        list-style-type: none;
+        text-decoration: none;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    body{
+        background: linear-gradient(45deg, aqua, blue);
+
+    }
+    .card{
+        margin-left:15%;
+    }
+   
+    .inputA{
+       width: 70%;
+
+    }
+    textarea{
+        width: 70%;
+        height:100px;
+        border:none;
+        border-radius: 5px;
+    }
+    button{
+        margin-top:2px;
+        width: 70%;
+        border:none;
+        border-radius: 5px;
+        height:30px;
+        margin-bottom: 3%;
+    }
+    button:hover{
+        background: aqua;
+        width: 70%;
+        
+    }
+</style>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <img src="./Sem título 1.png" alt="logo" height="50">
+                <h1>PLaNETA</h1>
+                <a href="sobre.html">sobre nos</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="card">
+        <h1>Formulario de Candidatura</h1>
+        <form action="mailto:grupo20planeta@gmail.com" method="post" enctype="text/plain">
+        <input class="inputA" type="text" name="Nome completo" id="nome" placeholder="Nome completo" required><br><br>
+        <label for="text">Data de Nascimento</label>
+        <input type="date" name="Data de Nascimento" id="data de Nascimento" required><br>
+        <label for="text">sexo:</label><br>
+        <input type="radio" name="sexo" id="femenino" value="Femenino" required><label for="femenino">Femenino</label>
+        <input type="radio" name="sexo" id="masculino" value="Masculino" required><label for="masculino">Masculido</label><br>
+        <input class="inputA" type="text" name="Naturalidade" id="Naturalidade" required placeholder="Naturalidade"><br><br>
+        <input class="inputA" type="text" name="Nacionalidade" id="Nacionalidade" required placeholder="Nacionalidade"><br><br>
+        <input class="inputA" type="address" name="Endereco" id="endereco" required placeholder="localizacao actual(provincia e cidade)"><br><br>
+        <input class="inputA" type="email" name="E-mail" id="e-mail" placeholder="E-mail" required><br><br>
+        <input class="inputA" type="tel" name="Contacto" id="numero" placeholder="Numero de telefone" required><br>
+        <label for="text">é Estudante?</label>
+        <input type="radio" required name="é estudante?" value="Sim" id="Sim"><label for="estudante">Sim</label>
+        <input type="radio" required name="é estudante?" value="Nao" id="Nao"><label for="estudante">Nao</label><br>
+        <input class="inputA" type="text" required name="Linguagem de dominio" id="linguagem de dominio" placeholder="linguagem de dominio, ex:js, php, java e c++"><br>
+        <label for="text">Tem dominio de html e css?</label>
+        <input type="radio" required name="Tem dominio de html e css?" value="Sim" id="Sim"><label for="html e css">Sim</label>
+        <input type="radio" required name="Tem dominio de html e css?" value="Nao" id="Nao"><label for="html e css">Nao</label><br>
+        <label for="text">Idiomas fluente</label>
+        <select name="idiomas fluentes" id="linguas faladas">
+            <option value="portugues">portugues</option>
+            <option value="ingles">ingles</option>
+            <option value="espanhol">Espanhol</option>
+            <option value="todos">todos</option>
+            <option value="portugues e ingles">portugues e ingles</option>
+            <option value="portugues e espanhol">portugues e espanhol</option>
+        </select><br>
+        <label for="text">Possui um computador?</label>
+        <input type="radio" required name="Possui um computador?" value="sim" id="Sim"><label for="computador?">Sim</label>
+        <input type="radio" required name="Possui um computador?" value="nao" id="Nao"><label for="computador?">Nao</label><br>       
+        <input type="checkbox" value="confirmo" name="Checkbox" id="confirmar" required>
+        <label for="checkbox">ao clicar aqui confirmo que li e concordo com todas regras, termos e politicas da empresa/grupo</label><br>
+        <textarea name="Mensagem" id="motivos de entrar no grupo" cols="30" rows="10" placeholder="Diga nos porque quer entrar no grupo"></textarea><br>
+        <button type="submit" onclick="alert('Parabens! Precione em OK e Aguarde 5 segundos dependendo da velocidade do seu dispositivo, aparecera uma pagina para confirmacao do envio via email se nao abrir uma pagina do seu app pre-definido de email tente entrar apartir do seu computador. Se cocluido aguarde a confirmacao da sua candidatura atraves do seu email ou numero');" > Enviar</button>
+      
+        </form>
+       <!--- <button onclick="gerarpdf">gerar pdf</button>--->
+    </div>
+</body>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js" crossorigin="anonymous">
+
+</script>
+<script>
+    function gerarpdf();{
+    var doc = new jspdf();
+    doc.fromHTML("<form>...</form>");
+    doc.save("pln.pdf");
+    }
+</script>--->
+<script type="text/javascript">
+  
+    document.write("\251copyright todos direitos reservados PLaNETA\256  2023 @grupo20planeta");
+
+alert("Bem vindo \nEsperamos que os dados aqui inseridos sejam veridicos");
+    
+</script>
+</html>
