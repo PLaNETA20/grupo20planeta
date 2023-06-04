@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario PLN</title>
+</head>
+<style>
+    *{
+        list-style-type: none;
+        text-decoration: none;
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0;
+    }
+    body{
+background: url(./sharing.png);
+
+    }
+    nav ul{
+      display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background:aqua;
+        width:100%;
+        padding-top:1.5%;
+        padding-bottom:1.5%;
+}
+h1{
+    color:rgb(6, 219, 235);
+}
+.card{
+    margin-left: 20%;
+    margin-top: 1%;
+}
+label{
+    font-size: 18px;
+    color: white;
+}
+   
+    .inputA{
+       width: 70%;
+       border-radius: 5px;
+       border: none;
+       height: 35px;
+       font-size: 17px;
+       padding-left: 2%;
+       margin-top: 1%;
+    }
+    .inputB{
+        height: 35px;
+        border: none;
+        border-radius: 5px;
+        width: 50%;
+        font-size: 17px;
+        padding-left: 2%;
+    }
+    .inputC{
+        width: 20px;
+        height: 20px;
+        font-size: 17px;
+        
+    }
+    textarea{
+        width: 70%;
+        height:100px;
+        border:none;
+        border-radius: 5px;
+        font-size: 17px;
+        padding-left: 2%;
+    }
+    button{
+        margin-top:2px;
+        width: 72.5%;
+        border:none;
+        border-radius: 5px;
+        height:30px;
+        margin-bottom: 3%;
+        font-size: 17px;
+    }
+    button:hover{
+        background: aqua;
+       
+        
+    }
+</style>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li>
+              <h1>PLaNETA</h1>
+            </li>
+            <li>
+              <a href="vagas.html"><img src="./user-svgrepo-com.svg" alt="vagas"height="30"></a>
+            </li>
+            <li>
+              <a href=""><img src="./notification-svgrepo-com(1).svg" alt="notificacoes" height="30"></a>
+            </li>
+            <a href="sobre.html">Sobre</a>
+          </ul>
+        </nav>
+      </header>
+      
+    <div class="card">
+        <h1>Formulario de Candidatura</h1>
+        <form action="https://formspree.io/f/xbjevrvl" method="post">
+        <input class="inputA" type="text" name="Nome completo" id="nome" placeholder="Nome completo" required><br>
+        <label for="text">Data de Nascimento:</label><br>
+        <input class="inputB" type="date" name="Data de Nascimento" id="data de Nascimento" required><br>
+        <label for="text">sexo:</label><br>
+        <input class="inputC" type="radio" name="sexo" id="femenino" value="Femenino" required><label for="femenino">Femenino</label>
+        <input class="inputC" type="radio" name="sexo" id="masculino" value="Masculino" required><label for="masculino">Masculido</label><br>
+        <input class="inputA" type="text" name="Naturalidade" id="Naturalidade" required placeholder="Naturalidade">
+        <input class="inputA" type="text" name="Nacionalidade" id="Nacionalidade" required placeholder="Nacionalidade">
+        <input class="inputA" type="address" name="Endereco" id="endereco" required placeholder="localizacao actual(provincia e cidade)">
+        <input class="inputA" type="email" name="E-mail" id="e-mail" placeholder="E-mail" required>
+        <input class="inputA" type="tel" name="Contacto" id="numero" placeholder="Numero de telefone" required><br>
+        <label for="text">é Estudante?</label><br>
+        <input class="inputC" type="radio" required name="é estudante?" value="Sim" id="Sim"><label for="estudante">Sim</label>
+        <input class="inputC" type="radio" required name="é estudante?" value="Nao" id="Nao"><label for="estudante">Nao</label><br>
+        <input class="inputA" type="text" required name="Linguagem de dominio" id="linguagem de dominio" placeholder="linguagem de dominio, ex:js, php, java e c++"><br>
+        <label for="text">Tem dominio de html e css?</label><br>
+        <input class="inputC" type="radio" required name="Tem dominio de html e css?" value="Sim" id="Sim"><label for="html e css">Sim</label>
+        <input class="inputC" type="radio" required name="Tem dominio de html e css?" value="Nao" id="Nao"><label for="html e css">Nao</label>
+        <label for="text">Idiomas fluente:</label><br>
+        <select class="inputB" name="idiomas fluentes" id="linguas faladas">
+            <option value="portugues">portugues</option>
+            <option value="ingles">ingles</option>
+            <option value="espanhol">Espanhol</option>
+            <option value="todos">todos</option>
+            <option value="portugues e ingles">portugues e ingles</option>
+            <option value="portugues e espanhol">portugues e espanhol</option>
+        </select><br>
+        <label for="text">Possui um computador?</label><br>
+        <input class="inputC" type="radio" required name="Possui um computador?" value="sim" id="Sim"><label for="computador?">Sim</label>
+        <input class="inputC" type="radio" required name="Possui um computador?" value="nao" id="Nao"><label for="computador?">Nao</label>   <br> 
+        <input class="inputC" type="checkbox" value="confirmo" name="Checkbox" id="confirmar" required>
+        <label for="checkbox">ao clicar aqui confirmo que li e concordo com todas regras, termos e politicas da empresa/grupo</label><br>
+        <textarea name="Mensagem" id="motivos de entrar no grupo" cols="30" rows="10" placeholder="Diga nos porque quer entrar no grupo"></textarea>
+        <button type="submit" onclick="alert('Parabens! Sua candidatura foi enviada, Precione em OK e aguarde a confirmacao da sua candidatura atraves do seu email ou numero');" > Enviar</button>
+      
+        </form>
+    </div>
+      
+</body>
+</html>

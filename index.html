@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLaneta</title>
+</head>
+<style>
+    *{
+        margin:0%;
+        text-decoration: none;
+        list-style-type: none;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    body{
+      background:url(./Imagem-do-topo-9.jpg);
+      margin-bottom: 5%;
+    }
+    nav ul{
+      display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background:aqua;
+        width:100%;
+        padding-top:1.5%;
+        padding-bottom:1.5%;
+}
+    h1{
+        color:rgb(6, 219, 235);
+    }
+
+    .card{
+      margin-top: 4%;
+        padding-left:5%;
+        background:none;
+        border-radius: 5px;
+        height:auto;
+        width:60%;
+        color: rgb(10, 143, 143);
+    }
+    p{
+        padding-top: 3%;
+    }
+    button{
+      border:none;
+      border-radius: 3px;
+      height: 30px;
+      width: 100px;
+      background: aqua;
+     
+    }
+    button:hover{
+        background: white;
+        border-radius: 3px;
+    }
+    .last{
+      margin-left: 5%;
+        margin-top: 25%;
+        color: rgb(83, 79, 79);
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    @media screen and (min-width:0px) and (max-width:400px) {
+        .card{
+            height: 230px;
+        }
+    }
+</style>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <h1>PLaNETA</h1>
+        </li>
+        <li>
+          <a href="vagas.html"><img src="./user-svgrepo-com.svg" alt="vagas"height="30"></a>
+        </li>
+        <li>
+          <a href=""><img src="./notification-svgrepo-com(1).svg" alt="notificacoes" height="30"></a>
+        </li>
+        <a href="sobre.html">Sobre</a>
+      </ul>
+    </nav>
+  </header>
+    <div class="card">
+        <h1>Bem vindo a PLaNETA</h1>
+        <p> PLaNETA e uma empresa e grupo de tecnologia que dedica-se na criação de sistemas/app que... <a href="sobre.html">ver mais</a><br>Primeiro sugerimos que leia as regras termos e politicas. <a href="sobre.html">Clique aqui para ver...</a></p>
+        <br>
+        <form action="formulario.html">
+            <button onclick="alert('Ja leu os termos, regra e politicas?\nsaiba que qualquer inegligencia por motivos de nao leitura das regras a candidatura e banida')">Seguinte</button>
+        </form>
+    </div>
+   
+    <div class="last">
+    <li>
+      <p><img src="./phone-rotary-svgrepo-com.svg" alt="contacto" height="40">+(258) 862 224 644/ 876 689 424</p>
+   </li>
+   <li>
+    <p><img src="./message-svgrepo-com.svg" alt="email" height="40">grupo20planeta@gmail.com <br> sualeabdala81@gmail.com(@hotmail.com)</p>
+   </li>
+    </div>
+   
+    
+   
+</body>
+</html>
